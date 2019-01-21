@@ -40,7 +40,8 @@ public class FlexiblePageControl: UIView {
     public func setConfig(_ config: Config) {
 
         self.config = config
-
+        ItemView.smallSizeRatio = config.smallDotSizeRatio
+        ItemView.mediumSizeRatio = config.mediumDotSizeRatio
         update(currentPage: currentPage, config: config)
     }
 
